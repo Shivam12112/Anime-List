@@ -1,60 +1,77 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import axios from "axios";
+import Spinner from "./Spinner";
 
 function ViewAnime() {
+  let [anime, setAnime] = useState([]);
+  let [loading, setLoading] = useState(false);
+
+  let { id } = useParams();
+
+  useEffect(() => {
+    const fetchAnime = async (id) => {
+      try {
+        setLoading(true);
+        let url = `https://api.jikan.moe/v4/anime/${id}`;
+        let response = await axios.get(url);
+        let jsonResponse = response.data;
+        setAnime(jsonResponse.data);
+      } catch (error) {
+        setLoading(false);
+        console.log(error.message);
+      }
+    };
+
+    fetchAnime(id);
+  }, []);
+
   return (
     <div className="container">
-      <div className="row">
-        <div className="App">
-          <h1>Cowboy Bebop</h1>
-          <img
-            src="https://cdn.myanimelist.net/images/anime/4/19644l.webp"
-            alt=""
-          />
-          <hr />
-          <p className="h4">About</p>
-          <p>
-            Crime is timeless. By the year 2071, humanity has expanded across
-            the galaxy, filling the surface of other planets with settlements
-            like those on Earth. These new societies are plagued by murder, drug
-            use, and theft, and intergalactic outlaws are hunted by a growing
-            number of tough bounty hunters. Spike Spiegel and Jet Black pursue
-            criminals throughout space to make a humble living. Beneath his
-            goofy and aloof demeanor, Spike is haunted by the weight of his
-            violent past. Meanwhile, Jet manages his own troubled memories while
-            taking care of Spike and the Bebop, their ship. The duo is joined by
-            the beautiful con artist Faye Valentine, odd child Edward Wong Hau
-            Pepelu Tivrusky IV, and Ein, a bioengineered Welsh Corgi. While
-            developing bonds and working to catch a colorful cast of criminals,
-            the Bebop crew's lives are disrupted by a menace from Spike's past.
-            As a rival's maniacal plot continues to unravel, Spike must choose
-            between life with his newfound family or revenge for his old wounds.
-            [Written by MAL Rewrite]
-          </p>
-          <hr />
-
-          <div className="App h2">
-            <p>Watch Trailer!!</p>
-            <div className="video_container jsutify-content-center">
-              <iframe
-                className="responsive-iframe"
-                src="https://www.youtube.com/embed/qig4KOK2R2g?enablejsapi=1&wmode=opaque&autoplay=1"
-                title="video"
+      {!loading ? (
+        <Spinner />
+      ) : (
+        <div className="row">
+          <p className=" display-3 text-center mt-3">{anime.title}</p>
+          <div className="col">
+            <div className="d-flex justify-content-between">
+              <img
+                className=" ms-5 mb-2 viewImgSize me-2"
+                src={anime?.images?.jpg?.large_image_url}
+                alt=""
               />
+              <p className=" about">
+                <p className="h2">Anime Info: </p>
+                <span className="fw-bold">Rating :</span> {anime.rating}
+                <br />
+                <span className="fw-bold">Score :</span> {anime.score}
+                <br />
+                <span className="fw-bold">Total Episodes :</span>
+                {anime.episodes}
+                <br />
+                <span className="fw-bold">Duraion :</span> {anime.duration}
+                <br />
+                <span className="fw-bold">Year :</span> {anime.year}
+              </p>
+            </div>
+            <hr />
+            <p className="h4 App">Synopsis</p>
+            <p className="App">{anime.synopsis}</p>
+            <hr />
+
+            <div className="App h2">
+              <p>Watch Trailer!!</p>
+              <div className="video_container jsutify-content-center about">
+                <iframe
+                  className="responsive-iframe"
+                  src={anime?.trailer?.embed_url}
+                  title="video"
+                />
+              </div>
             </div>
           </div>
         </div>
-        <p className="h3">Anime Info: </p>
-        <p>
-          <span className="fw-bold">Rating :</span> R - 17+ (violence &
-          profanity).
-          <br />
-          <span className="fw-bold">Score :</span> 8.75.
-          <br />
-          <span className="fw-bold">Duraion :</span> 24 min per ep.
-          <br />
-          <span className="fw-bold">Year :</span> 1998.
-        </p>
-      </div>
+      )}
     </div>
   );
 }

@@ -12,9 +12,8 @@ function AnimeList() {
     errorMessage: "",
   });
   const [page, setPage] = useState(1);
-  const [query, setQuery] = useState({
-    text: "",
-  });
+  const [query, setQuery] = useState("");
+  const [watchlist, setWatchlist] = useState([]);
 
   const fetchData = async () => {
     try {
@@ -33,6 +32,7 @@ function AnimeList() {
       setState({ ...state, loading: false, errorMessage: error.message });
     }
   };
+
   useEffect(() => {
     fetchData();
   }, []);
@@ -41,14 +41,14 @@ function AnimeList() {
     try {
       setState({ loading: true });
       let url = `https://api.jikan.moe/v4/anime?limit=24&page=${page + 1}`;
-      console.log(url);
+      // console.log(url);
       let response = await axios.get(url);
       let jsonResponse = response.data;
 
       setState({
         ...state,
-        loading: false,
         animes: jsonResponse.data,
+        loading: false,
         filteredAnimes: jsonResponse.data,
       });
       setPage(page + 1);
@@ -61,7 +61,6 @@ function AnimeList() {
     try {
       setState({ loading: true });
       let url = `https://api.jikan.moe/v4/anime?limit=24&page=${page - 1}`;
-      console.log(url);
       let response = await axios.get(url);
       let jsonResponse = response.data;
 
@@ -76,16 +75,22 @@ function AnimeList() {
       console.log(error.message);
     }
   };
+  const addToWatchList = async (anime) => {
+    // console.log(anime);
+    setWatchlist(anime);
+    console.log(watchlist);
+    let url = "http://localhost:5000/data";
+    let body = await axios.post(url, anime);
+    console.log(body);
+  };
 
   const searchAnimes = (event) => {
-    setQuery({ ...query, text: event.target.value });
-    console.log(query.text);
+    setQuery(event.target.value);
     let filterAnime = state.animes.filter((anime) => {
       return anime.title
         .toLowerCase()
         .includes(event.target.value.toLowerCase());
     });
-
     setState({ ...state, filteredAnimes: filterAnime });
   };
 
@@ -93,7 +98,6 @@ function AnimeList() {
 
   return (
     <div className="container p-3">
-      {/* <pre>{query.text}</pre> */}
       <div className="row">
         <div className="col-md-12">
           <div className="d-flex justify-content-between">
@@ -108,9 +112,6 @@ function AnimeList() {
                 placeholder="Search Here..."
               />
             </p>
-            <select className="selectSize">
-              <option value="">--select genres--</option>
-            </select>
           </div>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
@@ -128,6 +129,9 @@ function AnimeList() {
         >
           Previous
         </button>
+        <p className="h4 text-danger">{`${page} out of ${
+          totalPages ? totalPages : 1042
+        }`}</p>
         <button className="btn btn-dark" onClick={handleNext}>
           Next
         </button>
@@ -140,7 +144,7 @@ function AnimeList() {
           filteredAnimes.map((anime) => {
             return (
               <div className="col-md-4 align-items-center" key={anime.mal_id}>
-                <Anime anime={anime} />
+                <Anime anime={anime} addToWatchList={addToWatchList} />
               </div>
             );
           })

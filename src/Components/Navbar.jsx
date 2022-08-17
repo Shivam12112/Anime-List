@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -12,17 +13,13 @@ function Navbar() {
             Anime
             <span className="text-warning"> Verse</span>
           </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
+          
+              <NavLink to={"/watchlist"} className="navbar-brand">
+                <span className="nav-link fw-bold">
+                  Watch<span className="text-warning"> List</span>
+                </span>
+              </NavLink>
+           
         </div>
       </nav>
     </div>
