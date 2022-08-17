@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function WatchList() {
   let [state, setState] = useState([]);
@@ -13,11 +14,12 @@ function WatchList() {
     };
     fetchWatchList();
   }, []);
-
+  let navigate = useNavigate();
   const handleDelete = async (id) => {
     let url = `http://localhost:5000/data/${id}`;
     let response = await axios.delete(url);
-    console.log(response);
+    navigate("/", { replace: true });
+    setState(response.data);
   };
 
   return (
