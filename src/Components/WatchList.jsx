@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function WatchList() {
   let [state, setState] = useState([]);
@@ -14,13 +14,6 @@ function WatchList() {
     };
     fetchWatchList();
   }, []);
-  let navigate = useNavigate();
-  const handleDelete = async (id) => {
-    let url = `http://localhost:5000/data/${id}`;
-    let response = await axios.delete(url);
-    navigate("/", { replace: true });
-    setState(response.data);
-  };
 
   return (
     <div className="container">
@@ -42,11 +35,13 @@ function WatchList() {
           return (
             <div className="col-md-4" key={anime.mal_id}>
               <div className="card mb-3" style={{ width: "22rem" }}>
-                <img
-                  src={anime?.images?.webp?.image_url}
-                  className="card-img-top imgSize"
-                  alt="..."
-                />
+                <Link to={`/anime/view/${anime.mal_id}`}>
+                  <img
+                    src={anime.images.webp.image_url}
+                    className="card-img-top imgSize"
+                    alt="..."
+                  />
+                </Link>
 
                 <div className="card-body">
                   <h5 className="card-title titleSize">{anime.title}</h5>
@@ -66,14 +61,6 @@ function WatchList() {
                     >
                       Visit Anime Page
                     </a>
-                    <button
-                      className="btn btn-warning"
-                      onClick={() => {
-                        handleDelete(anime.mal_id);
-                      }}
-                    >
-                      Remove From List
-                    </button>
                   </div>
                 </div>
               </div>
