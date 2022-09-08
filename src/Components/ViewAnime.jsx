@@ -49,19 +49,19 @@ function ViewAnime() {
                 <span className="fw-bold">Total Episodes :</span>
                 {anime.episodes}
                 <br />
-                <span className="fw-bold">Duraion :</span> {anime.duration}
+                <span className="fw-bold">Duration :</span> {anime.duration}
                 <br />
                 <span className="fw-bold">Year :</span> {anime.year}
               </p>
             </div>
             <hr />
-            <p className="h4 App">Synopsis</p>
+            <p className="h4 App">Synopsis/Plot</p>
             <p className="App">{anime.synopsis}</p>
             <hr />
 
             <div className="App h2">
               <p>Watch Trailer!!</p>
-              <div className="video_container jsutify-content-center about">
+              <div className="video_container justify-content-center about">
                 <iframe
                   className="responsive-iframe"
                   src={anime?.trailer?.embed_url}

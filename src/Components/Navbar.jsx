@@ -1,28 +1,47 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-function Navbar() {
+function Navbar(props) {
   return (
-    <div>
-      <nav className="navbar navbar-dark navbar-expand-lg bg-dark">
-        <div className="container-fluid">
-          <a className="navbar-brand fw-bold" href="/">
-            <span className="text-warning">
-              <i className="fa-solid fa-video me-2"></i>
-            </span>
-            Anime
-            <span className="text-warning"> Verse</span>
-          </a>
-          
-              <NavLink to={"/watchlist"} className="navbar-brand">
-                <span className="nav-link fw-bold">
-                  Watch<span className="text-warning"> List</span>
+    <nav className="navbar navbar-expand-lg bg-dark  navbar-dark">
+      <div className="container-fluid">
+        <Link className="navbar-brand fw-bold" to="/">
+          <span className="text-warning">
+            <i className="fa-brands fa-vimeo-v me-1"></i>
+          </span>
+          Anime
+          <span className="text-warning"> Verse</span>
+        </Link>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+          <form className="d-flex" role="search">
+            <Link to={"/watchlist"} className="navbar-brand d-flex">
+              <span className="nav-link fw-bold">
+                Watch
+                <span className="text-warning">
+                  {" "}
+                  List
+                  <sup className="h5 fw-bold text-danger ms-1">
+                    {props.watchListCount}
+                  </sup>
                 </span>
-              </NavLink>
-           
+              </span>
+            </Link>
+          </form>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
   );
 }
 

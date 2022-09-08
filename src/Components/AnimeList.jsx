@@ -2,18 +2,19 @@ import React, { useEffect, useState } from "react";
 import Anime from "./Anime";
 import Spinner from "./Spinner";
 import axios from "axios";
+import InfiniteScroll from "react-infinite-scroll-component";
 
 function AnimeList() {
   const [state, setState] = useState({
     loading: false,
     animes: [],
     filteredAnimes: [],
-    totalPages: "",
     errorMessage: "",
   });
+
+  const [totalPages, setTotalPages] = useState(0);
   const [page, setPage] = useState(1);
   const [query, setQuery] = useState("");
-  const [watchlist, setWatchlist] = useState([]);
 
   const fetchData = async () => {
     try {
@@ -26,8 +27,8 @@ function AnimeList() {
         loading: false,
         animes: jsonResponse.data,
         filteredAnimes: jsonResponse.data,
-        totalPages: jsonResponse.pagination.last_visible_page,
       });
+      setTotalPages(jsonResponse.pagination.last_visible_page);
     } catch (error) {
       setState({ ...state, loading: false, errorMessage: error.message });
     }
@@ -37,51 +38,9 @@ function AnimeList() {
     fetchData();
   }, []);
 
-  const handleNext = async () => {
-    try {
-      setState({ loading: true });
-      let url = `https://api.jikan.moe/v4/anime?limit=24&page=${page + 1}`;
-      // console.log(url);
-      let response = await axios.get(url);
-      let jsonResponse = response.data;
-
-      setState({
-        ...state,
-        animes: jsonResponse.data,
-        loading: false,
-        filteredAnimes: jsonResponse.data,
-      });
-      setPage(page + 1);
-    } catch (error) {
-      console.log(error.message);
-    }
-  };
-
-  const handlePrevious = async () => {
-    try {
-      setState({ loading: true });
-      let url = `https://api.jikan.moe/v4/anime?limit=24&page=${page - 1}`;
-      let response = await axios.get(url);
-      let jsonResponse = response.data;
-
-      setState({
-        ...state,
-        loading: false,
-        animes: jsonResponse.data,
-        filteredAnimes: jsonResponse.data,
-      });
-      setPage(page - 1);
-    } catch (error) {
-      console.log(error.message);
-    }
-  };
   const addToWatchList = async (anime) => {
-    // console.log(anime);
-    setWatchlist(anime);
-    console.log(watchlist);
-    let url = "http://localhost:5000/data";
-    let body = await axios.post(url, anime);
-    console.log(body);
+    let url = "http://localhost:5000/watchlist";
+    await axios.post(url, anime);
   };
 
   const searchAnimes = (event) => {
@@ -94,7 +53,24 @@ function AnimeList() {
     setState({ ...state, filteredAnimes: filterAnime });
   };
 
-  let { loading, filteredAnimes, totalPages } = state;
+  const fetchMore = async () => {
+    try {
+      let url = `https://api.jikan.moe/v4/anime?limit=24&page=${page + 1}`;
+      let response = await axios.get(url);
+      let jsonResponse = response.data;
+
+      setState({
+        ...state,
+        animes: jsonResponse.data,
+        filteredAnimes: filteredAnimes.concat(jsonResponse.data),
+      });
+      setPage(page + 1);
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
+
+  let { filteredAnimes } = state;
 
   return (
     <div className="container p-3">
@@ -121,51 +97,25 @@ function AnimeList() {
           </p>
         </div>
       </div>
-      <div className="d-flex justify-content-between my-2">
-        <button
-          className="btn btn-dark"
-          disabled={page <= 1 ? true : false}
-          onClick={handlePrevious}
-        >
-          Previous
-        </button>
-        <p className="h4 text-danger">{`${page} out of ${
-          totalPages ? totalPages : 1042
-        }`}</p>
-        <button className="btn btn-dark" onClick={handleNext}>
-          Next
-        </button>
-      </div>
-      <div className="row">
-        {loading ? (
-          <Spinner />
-        ) : (
-          filteredAnimes.length > 0 &&
-          filteredAnimes.map((anime) => {
-            return (
-              <div className="col-md-4 align-items-center" key={anime.mal_id}>
-                <Anime anime={anime} addToWatchList={addToWatchList} />
-              </div>
-            );
-          })
-        )}
-      </div>
-      <div className="d-flex justify-content-between">
-        <button
-          className="btn btn-dark"
-          disabled={page <= 1 ? true : false}
-          onClick={handlePrevious}
-        >
-          Previous
-        </button>
-        <button
-          className="btn btn-dark"
-          disabled={page >= totalPages ? true : false}
-          onClick={() => handleNext()}
-        >
-          Next
-        </button>
-      </div>
+
+      <InfiniteScroll
+        dataLength={filteredAnimes?.length}
+        next={fetchMore}
+        hasMore={page !== totalPages}
+        loader={<Spinner />}
+      >
+        <div className="container">
+          <div className="row">
+            {filteredAnimes?.map((anime) => {
+              return (
+                <div className="col-md-4 col-lg-3 col-sm-6 " key={anime.mal_id}>
+                  <Anime anime={anime} addToWatchList={addToWatchList} />
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </InfiniteScroll>
     </div>
   );
 }
