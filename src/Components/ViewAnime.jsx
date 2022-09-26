@@ -17,6 +17,7 @@ function ViewAnime() {
         let response = await axios.get(url);
         let jsonResponse = response.data;
         setAnime(jsonResponse.data);
+        console.log(jsonResponse.data);
       } catch (error) {
         setLoading(false);
         console.log(error.message);
@@ -34,13 +35,13 @@ function ViewAnime() {
         <div className="row">
           <p className=" display-3 text-center mt-3">{anime.title}</p>
           <div className="col">
-            <div className="d-flex justify-content-between">
+            <div className="d-flex justify-content-between ">
               <img
                 className=" ms-5 mb-2 viewImgSize me-2"
                 src={anime?.images?.jpg?.large_image_url}
                 alt=""
               />
-              <p className=" about">
+              <div className=" about ">
                 <p className="h2">Anime Info: </p>
                 <span className="fw-bold">Rating :</span> {anime.rating}
                 <br />
@@ -52,8 +53,9 @@ function ViewAnime() {
                 <span className="fw-bold">Duration :</span> {anime.duration}
                 <br />
                 <span className="fw-bold">Year :</span> {anime.year}
-              </p>
+              </div>
             </div>
+
             <hr />
             <p className="h4 App">Synopsis/Plot</p>
             <p className="App">{anime.synopsis}</p>

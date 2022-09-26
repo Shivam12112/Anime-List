@@ -8,6 +8,7 @@ const WatchList = () => {
   const [loading, setLoading] = useState(false);
   let navigate = useNavigate();
   let url = "http://localhost:5000/watchlist";
+  let newAnime;
 
   useEffect(() => {
     const fetchWatchList = async () => {
@@ -28,11 +29,13 @@ const WatchList = () => {
     try {
       setLoading(true);
       if (window.confirm("Are you sure?")) {
-        await axios.delete(`${url}/${id}`);
+        let response = await axios.delete(`${url}/${id}`);
+        console.log(response.status);
         navigate("/watchlist", { replace: true });
-        const newState = watchList.filter((item) => item.id !== id);
+        newAnime = watchList.filter((item) => item.id !== id);
         setLoading(false);
-        setWatchList(newState);
+        setWatchList(newAnime);
+        window.location.reload();
       }
     } catch (error) {
       console.log(error);
@@ -42,7 +45,7 @@ const WatchList = () => {
   const handleRender = () => {
     return loading ? (
       <Spinner />
-    ) : watchList.length > 0 ? (
+    ) : watchList?.length > 0 ? (
       watchList.map((anime, index) => {
         let img = anime.images.webp.image_url;
         return (
@@ -56,13 +59,17 @@ const WatchList = () => {
                 />
               </Link>
               <div className="card-body">
-                <h5 className="card-title titleSize">{anime.title}</h5>
+                <h5 className="card-title titleSize">
+                  {anime.title.length > 25
+                    ? anime.title.slice(0, 25) + "..."
+                    : anime.title}
+                </h5>
                 <p className="fw-bold">
                   <i className="fa-solid fa-star text-warning me-2"></i>
                   {anime.rating}
                   <br />
                   <i className="fa-solid fa-calendar-days text-success me-2"></i>
-                  Release Year - {anime.year}
+                  Release Year - {anime.year ? anime.year : "---"}
                 </p>
 
                 <a

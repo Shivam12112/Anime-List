@@ -1,18 +1,185 @@
 {
   "watchlist": [
     {
-      "mal_id": 15,
-      "url": "https://myanimelist.net/anime/15/Eyeshield_21",
+      "mal_id": 6,
+      "url": "https://myanimelist.net/anime/6/Trigun",
       "images": {
         "jpg": {
-          "image_url": "https://cdn.myanimelist.net/images/anime/12/66961.jpg",
-          "small_image_url": "https://cdn.myanimelist.net/images/anime/12/66961t.jpg",
-          "large_image_url": "https://cdn.myanimelist.net/images/anime/12/66961l.jpg"
+          "image_url": "https://cdn.myanimelist.net/images/anime/7/20310.jpg",
+          "small_image_url": "https://cdn.myanimelist.net/images/anime/7/20310t.jpg",
+          "large_image_url": "https://cdn.myanimelist.net/images/anime/7/20310l.jpg"
         },
         "webp": {
-          "image_url": "https://cdn.myanimelist.net/images/anime/12/66961.webp",
-          "small_image_url": "https://cdn.myanimelist.net/images/anime/12/66961t.webp",
-          "large_image_url": "https://cdn.myanimelist.net/images/anime/12/66961l.webp"
+          "image_url": "https://cdn.myanimelist.net/images/anime/7/20310.webp",
+          "small_image_url": "https://cdn.myanimelist.net/images/anime/7/20310t.webp",
+          "large_image_url": "https://cdn.myanimelist.net/images/anime/7/20310l.webp"
+        }
+      },
+      "trailer": {
+        "youtube_id": "bJVyIXeUznY",
+        "url": "https://www.youtube.com/watch?v=bJVyIXeUznY",
+        "embed_url": "https://www.youtube.com/embed/bJVyIXeUznY?enablejsapi=1&wmode=opaque&autoplay=1",
+        "images": {
+          "image_url": "https://img.youtube.com/vi/bJVyIXeUznY/default.jpg",
+          "small_image_url": "https://img.youtube.com/vi/bJVyIXeUznY/sddefault.jpg",
+          "medium_image_url": "https://img.youtube.com/vi/bJVyIXeUznY/mqdefault.jpg",
+          "large_image_url": "https://img.youtube.com/vi/bJVyIXeUznY/hqdefault.jpg",
+          "maximum_image_url": "https://img.youtube.com/vi/bJVyIXeUznY/maxresdefault.jpg"
+        }
+      },
+      "approved": true,
+      "titles": [
+        {
+          "type": "Default",
+          "title": "Trigun"
+        },
+        {
+          "type": "Japanese",
+          "title": "トライガン"
+        },
+        {
+          "type": "English",
+          "title": "Trigun"
+        }
+      ],
+      "title": "Trigun",
+      "title_english": "Trigun",
+      "title_japanese": "トライガン",
+      "title_synonyms": [],
+      "type": "TV",
+      "source": "Manga",
+      "episodes": 26,
+      "status": "Finished Airing",
+      "airing": false,
+      "aired": {
+        "from": "1998-04-01T00:00:00+00:00",
+        "to": "1998-09-30T00:00:00+00:00",
+        "prop": {
+          "from": {
+            "day": 1,
+            "month": 4,
+            "year": 1998
+          },
+          "to": {
+            "day": 30,
+            "month": 9,
+            "year": 1998
+          }
+        },
+        "string": "Apr 1, 1998 to Sep 30, 1998"
+      },
+      "duration": "24 min per ep",
+      "rating": "PG-13 - Teens 13 or older",
+      "score": 8.22,
+      "scored_by": 335853,
+      "rank": 309,
+      "popularity": 243,
+      "members": 678109,
+      "favorites": 13720,
+      "synopsis": "Vash the Stampede is the man with a $$60,000,000,000 bounty on his head. The reason: he's a merciless villain who lays waste to all those that oppose him and flattens entire cities for fun, garnering him the title \"The Humanoid Typhoon.\" He leaves a trail of death and destruction wherever he goes, and anyone can count themselves dead if they so much as make eye contact—or so the rumors say. In actuality, Vash is a huge softie who claims to have never taken a life and avoids violence at all costs. With his crazy doughnut obsession and buffoonish attitude in tow, Vash traverses the wasteland of the planet Gunsmoke, all the while followed by two insurance agents, Meryl Stryfe and Milly Thompson, who attempt to minimize his impact on the public. But soon, their misadventures evolve into life-or-death situations as a group of legendary assassins are summoned to bring about suffering to the trio. Vash's agonizing past will be unraveled and his morality and principles pushed to the breaking point. [Written by MAL Rewrite]",
+      "background": "The Japanese release by Victor Entertainment has different openings relating to the specific episode it's played on. The initial Geneon Entertainment USA (then known as Pioneer) releases on VHS and DVD (singles, Signature Series, and box set) used only the first opening on each episode. This was due to the Japanese licensor providing them clean materials for only the first opening to put the English credits on. Geneon later fixed this mistake on their Limited Edition tin releases in 2005/2006, as well as on the Remix singles. Following Geneon USA's demise in late 2007, the show went out of print. When FUNimation Entertainment picked up the show in 2010 and released it, they repeated Geneon's mistake of using only the first opening on every episode. This mistake was later fixed in 2013 on the Anime Classics re-release.",
+      "season": "spring",
+      "year": 1998,
+      "broadcast": {
+        "day": "Thursdays",
+        "time": "01:15",
+        "timezone": "Asia/Tokyo",
+        "string": "Thursdays at 01:15 (JST)"
+      },
+      "producers": [
+        {
+          "mal_id": 123,
+          "type": "anime",
+          "name": "Victor Entertainment",
+          "url": "https://myanimelist.net/anime/producer/123/Victor_Entertainment"
+        }
+      ],
+      "licensors": [
+        {
+          "mal_id": 102,
+          "type": "anime",
+          "name": "Funimation",
+          "url": "https://myanimelist.net/anime/producer/102/Funimation"
+        },
+        {
+          "mal_id": 1459,
+          "type": "anime",
+          "name": "Geneon Entertainment USA",
+          "url": "https://myanimelist.net/anime/producer/1459/Geneon_Entertainment_USA"
+        }
+      ],
+      "studios": [
+        {
+          "mal_id": 11,
+          "type": "anime",
+          "name": "Madhouse",
+          "url": "https://myanimelist.net/anime/producer/11/Madhouse"
+        }
+      ],
+      "genres": [
+        {
+          "mal_id": 1,
+          "type": "anime",
+          "name": "Action",
+          "url": "https://myanimelist.net/anime/genre/1/Action"
+        },
+        {
+          "mal_id": 2,
+          "type": "anime",
+          "name": "Adventure",
+          "url": "https://myanimelist.net/anime/genre/2/Adventure"
+        },
+        {
+          "mal_id": 4,
+          "type": "anime",
+          "name": "Comedy",
+          "url": "https://myanimelist.net/anime/genre/4/Comedy"
+        },
+        {
+          "mal_id": 8,
+          "type": "anime",
+          "name": "Drama",
+          "url": "https://myanimelist.net/anime/genre/8/Drama"
+        },
+        {
+          "mal_id": 24,
+          "type": "anime",
+          "name": "Sci-Fi",
+          "url": "https://myanimelist.net/anime/genre/24/Sci-Fi"
+        }
+      ],
+      "explicit_genres": [],
+      "themes": [
+        {
+          "mal_id": 50,
+          "type": "anime",
+          "name": "Adult Cast",
+          "url": "https://myanimelist.net/anime/genre/50/Adult_Cast"
+        }
+      ],
+      "demographics": [
+        {
+          "mal_id": 27,
+          "type": "anime",
+          "name": "Shounen",
+          "url": "https://myanimelist.net/anime/genre/27/Shounen"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "mal_id": 19,
+      "url": "https://myanimelist.net/anime/19/Monster",
+      "images": {
+        "jpg": {
+          "image_url": "https://cdn.myanimelist.net/images/anime/10/18793.jpg",
+          "small_image_url": "https://cdn.myanimelist.net/images/anime/10/18793t.jpg",
+          "large_image_url": "https://cdn.myanimelist.net/images/anime/10/18793l.jpg"
+        },
+        "webp": {
+          "image_url": "https://cdn.myanimelist.net/images/anime/10/18793.webp",
+          "small_image_url": "https://cdn.myanimelist.net/images/anime/10/18793t.webp",
+          "large_image_url": "https://cdn.myanimelist.net/images/anime/10/18793l.webp"
         }
       },
       "trailer": {
@@ -31,87 +198,79 @@
       "titles": [
         {
           "type": "Default",
-          "title": "Eyeshield 21"
-        },
-        {
-          "type": "Synonym",
-          "title": "Eyeshield21"
+          "title": "Monster"
         },
         {
           "type": "Japanese",
-          "title": "アイシールド21"
+          "title": "モンスター"
+        },
+        {
+          "type": "English",
+          "title": "Monster"
         }
       ],
-      "title": "Eyeshield 21",
-      "title_english": null,
-      "title_japanese": "アイシールド21",
-      "title_synonyms": [
-        "Eyeshield21"
-      ],
+      "title": "Monster",
+      "title_english": "Monster",
+      "title_japanese": "モンスター",
+      "title_synonyms": [],
       "type": "TV",
       "source": "Manga",
-      "episodes": 145,
+      "episodes": 74,
       "status": "Finished Airing",
       "airing": false,
       "aired": {
-        "from": "2005-04-06T00:00:00+00:00",
-        "to": "2008-03-19T00:00:00+00:00",
+        "from": "2004-04-07T00:00:00+00:00",
+        "to": "2005-09-28T00:00:00+00:00",
         "prop": {
           "from": {
-            "day": 6,
+            "day": 7,
             "month": 4,
-            "year": 2005
+            "year": 2004
           },
           "to": {
-            "day": 19,
-            "month": 3,
-            "year": 2008
+            "day": 28,
+            "month": 9,
+            "year": 2005
           }
         },
-        "string": "Apr 6, 2005 to Mar 19, 2008"
+        "string": "Apr 7, 2004 to Sep 28, 2005"
       },
-      "duration": "23 min per ep",
-      "rating": "PG-13 - Teens 13 or older",
-      "score": 7.92,
-      "scored_by": 84054,
-      "rank": 678,
-      "popularity": 1180,
-      "members": 171185,
-      "favorites": 1930,
-      "synopsis": "Shy, reserved, and small-statured, Deimon High School student Sena Kobayakawa is the perfect target for bullies. However, as a result of running errands throughout his life, Sena has become agile and developed a skill for avoiding crowds of people. After the cunning Youichi Hiruma—captain of the Deimon Devil Bats football team—witnesses Sena's rapid legs in motion, he coerces the timid boy into joining his squad. As Hiruma wants to conceal Sena's identity from other clubs, Sena is forced to hide under the visored helmet of \"Eyeshield 21,\" a mysterious running back wearing the number 21 jersey. The legendary Eyeshield 21 can supposedly run at the speed of light and has achieved remarkable feats in the United States during his time at the Notre Dame College. Accustomed to avoiding his problems in the past, Sena's specialty might just help him become the new secret weapon of the Deimon Devil Bats. As he interacts with his teammates, Sena gradually gains more self-confidence and forges valuable bonds along the way. [Written by MAL Rewrite]",
-      "background": "Eyeshield 21 was original scheduled to stream in North America on Toonami Jetstream and NFL Rush in collaboration with the National Football League, but the plan fell through and the anime made its debut only on Toonami Jetstream, which later dropped the series. It would then become available in its entirety on Crunchyroll. Sentai Filmworks later licensed and released the first 52 episodes on DVD from 2010 to 2011.",
+      "duration": "24 min per ep",
+      "rating": "R+ - Mild Nudity",
+      "score": 8.84,
+      "scored_by": 321703,
+      "rank": 24,
+      "popularity": 151,
+      "members": 897130,
+      "favorites": 41164,
+      "synopsis": "Dr. Kenzou Tenma, an elite neurosurgeon recently engaged to his hospital director's daughter, is well on his way to ascending the hospital hierarchy. That is until one night, a seemingly small event changes Dr. Tenma's life forever. While preparing to perform surgery on someone, he gets a call from the hospital director telling him to switch patients and instead perform life-saving brain surgery on a famous performer. His fellow doctors, fiancée, and the hospital director applaud his accomplishment; but because of the switch, a poor immigrant worker is dead, causing Dr. Tenma to have a crisis of conscience. So when a similar situation arises, Dr. Tenma stands his ground and chooses to perform surgery on the young boy Johan Liebert instead of the town's mayor. Unfortunately, this choice leads to serious ramifications for Dr. Tenma—losing his social standing being one of them. However, with the mysterious death of the director and two other doctors, Dr. Tenma's position is restored. With no evidence to convict him, he is released and goes on to attain the position of hospital director. Nine years later when Dr. Tenma saves the life of a criminal, his past comes back to haunt him—once again, he comes face to face with the monster he operated on. He must now embark on a quest of pursuit to make amends for the havoc spread by the one he saved. [Written by MAL Rewrite]",
+      "background": null,
       "season": "spring",
-      "year": 2005,
+      "year": 2004,
       "broadcast": {
         "day": "Wednesdays",
-        "time": "19:00",
+        "time": "00:40",
         "timezone": "Asia/Tokyo",
-        "string": "Wednesdays at 19:00 (JST)"
+        "string": "Wednesdays at 00:40 (JST)"
       },
       "producers": [
         {
-          "mal_id": 16,
+          "mal_id": 29,
           "type": "anime",
-          "name": "TV Tokyo",
-          "url": "https://myanimelist.net/anime/producer/16/TV_Tokyo"
+          "name": "VAP",
+          "url": "https://myanimelist.net/anime/producer/29/VAP"
         },
         {
-          "mal_id": 139,
+          "mal_id": 62,
           "type": "anime",
-          "name": "Nihon Ad Systems",
-          "url": "https://myanimelist.net/anime/producer/139/Nihon_Ad_Systems"
+          "name": "Shogakukan-Shueisha Productions",
+          "url": "https://myanimelist.net/anime/producer/62/Shogakukan-Shueisha_Productions"
         },
         {
-          "mal_id": 717,
+          "mal_id": 1003,
           "type": "anime",
-          "name": "TV Tokyo Music",
-          "url": "https://myanimelist.net/anime/producer/717/TV_Tokyo_Music"
-        },
-        {
-          "mal_id": 1365,
-          "type": "anime",
-          "name": "Shueisha",
-          "url": "https://myanimelist.net/anime/producer/1365/Shueisha"
+          "name": "Nippon Television Network",
+          "url": "https://myanimelist.net/anime/producer/1003/Nippon_Television_Network"
         }
       ],
       "licensors": [
@@ -120,493 +279,14 @@
           "type": "anime",
           "name": "VIZ Media",
           "url": "https://myanimelist.net/anime/producer/119/VIZ_Media"
-        },
-        {
-          "mal_id": 376,
-          "type": "anime",
-          "name": "Sentai Filmworks",
-          "url": "https://myanimelist.net/anime/producer/376/Sentai_Filmworks"
         }
       ],
       "studios": [
         {
-          "mal_id": 36,
+          "mal_id": 11,
           "type": "anime",
-          "name": "Gallop",
-          "url": "https://myanimelist.net/anime/producer/36/Gallop"
-        }
-      ],
-      "genres": [
-        {
-          "mal_id": 30,
-          "type": "anime",
-          "name": "Sports",
-          "url": "https://myanimelist.net/anime/genre/30/Sports"
-        }
-      ],
-      "explicit_genres": [],
-      "themes": [
-        {
-          "mal_id": 77,
-          "type": "anime",
-          "name": "Team Sports",
-          "url": "https://myanimelist.net/anime/genre/77/Team_Sports"
-        }
-      ],
-      "demographics": [
-        {
-          "mal_id": 27,
-          "type": "anime",
-          "name": "Shounen",
-          "url": "https://myanimelist.net/anime/genre/27/Shounen"
-        }
-      ],
-      "id": 1
-    },
-    {
-      "mal_id": 28,
-      "url": "https://myanimelist.net/anime/28/Yakitate_Japan",
-      "images": {
-        "jpg": {
-          "image_url": "https://cdn.myanimelist.net/images/anime/3/76432.jpg",
-          "small_image_url": "https://cdn.myanimelist.net/images/anime/3/76432t.jpg",
-          "large_image_url": "https://cdn.myanimelist.net/images/anime/3/76432l.jpg"
-        },
-        "webp": {
-          "image_url": "https://cdn.myanimelist.net/images/anime/3/76432.webp",
-          "small_image_url": "https://cdn.myanimelist.net/images/anime/3/76432t.webp",
-          "large_image_url": "https://cdn.myanimelist.net/images/anime/3/76432l.webp"
-        }
-      },
-      "trailer": {
-        "youtube_id": "xs6xzznC9tY",
-        "url": "https://www.youtube.com/watch?v=xs6xzznC9tY",
-        "embed_url": "https://www.youtube.com/embed/xs6xzznC9tY?enablejsapi=1&wmode=opaque&autoplay=1",
-        "images": {
-          "image_url": "https://img.youtube.com/vi/xs6xzznC9tY/default.jpg",
-          "small_image_url": "https://img.youtube.com/vi/xs6xzznC9tY/sddefault.jpg",
-          "medium_image_url": "https://img.youtube.com/vi/xs6xzznC9tY/mqdefault.jpg",
-          "large_image_url": "https://img.youtube.com/vi/xs6xzznC9tY/hqdefault.jpg",
-          "maximum_image_url": "https://img.youtube.com/vi/xs6xzznC9tY/maxresdefault.jpg"
-        }
-      },
-      "approved": true,
-      "titles": [
-        {
-          "type": "Default",
-          "title": "Yakitate!! Japan"
-        },
-        {
-          "type": "Synonym",
-          "title": "Freshly Baked!! Ja-pan!"
-        },
-        {
-          "type": "Japanese",
-          "title": "焼きたて!! ジャぱん"
-        },
-        {
-          "type": "English",
-          "title": "Yakitate!! Japan"
-        }
-      ],
-      "title": "Yakitate!! Japan",
-      "title_english": "Yakitate!! Japan",
-      "title_japanese": "焼きたて!! ジャぱん",
-      "title_synonyms": [
-        "Freshly Baked!! Ja-pan!"
-      ],
-      "type": "TV",
-      "source": "Manga",
-      "episodes": 69,
-      "status": "Finished Airing",
-      "airing": false,
-      "aired": {
-        "from": "2004-10-12T00:00:00+00:00",
-        "to": "2006-03-14T00:00:00+00:00",
-        "prop": {
-          "from": {
-            "day": 12,
-            "month": 10,
-            "year": 2004
-          },
-          "to": {
-            "day": 14,
-            "month": 3,
-            "year": 2006
-          }
-        },
-        "string": "Oct 12, 2004 to Mar 14, 2006"
-      },
-      "duration": "24 min per ep",
-      "rating": "PG-13 - Teens 13 or older",
-      "score": 7.92,
-      "scored_by": 39463,
-      "rank": 669,
-      "popularity": 1898,
-      "members": 92097,
-      "favorites": 865,
-      "synopsis": "While countries such as France, England, and Germany all have their own internationally celebrated bread, Japan simply does not have one that can match in reputation. Thus after discovering the wonders of breadmaking at a young age, Kazuma Azuma embarks on a quest to create Japan's own unique national bread. And being blessed with unusually warm hands that allow dough to ferment faster, Azuma is able to bring his baking innovations to another level. As he begins working at the prestigious Japanese bakery chain, Pantasia, Azuma encounters other talented bakers and experiences firsthand the competitive world of baking. Along with his newfound friends and rivals, Azuma strives to create new and unparalleled bread that will start a baking revolution. [Written by MAL Rewrite]",
-      "background": null,
-      "season": "fall",
-      "year": 2004,
-      "broadcast": {
-        "day": null,
-        "time": null,
-        "timezone": null,
-        "string": "Unknown"
-      },
-      "producers": [
-        {
-          "mal_id": 16,
-          "type": "anime",
-          "name": "TV Tokyo",
-          "url": "https://myanimelist.net/anime/producer/16/TV_Tokyo"
-        },
-        {
-          "mal_id": 17,
-          "type": "anime",
-          "name": "Aniplex",
-          "url": "https://myanimelist.net/anime/producer/17/Aniplex"
-        },
-        {
-          "mal_id": 164,
-          "type": "anime",
-          "name": "d-rights",
-          "url": "https://myanimelist.net/anime/producer/164/d-rights"
-        },
-        {
-          "mal_id": 577,
-          "type": "anime",
-          "name": "Tohokushinsha Film Corporation",
-          "url": "https://myanimelist.net/anime/producer/577/Tohokushinsha_Film_Corporation"
-        },
-        {
-          "mal_id": 1175,
-          "type": "anime",
-          "name": "Atelier Musa",
-          "url": "https://myanimelist.net/anime/producer/1175/Atelier_Musa"
-        }
-      ],
-      "licensors": [
-        {
-          "mal_id": 217,
-          "type": "anime",
-          "name": "Nozomi Entertainment",
-          "url": "https://myanimelist.net/anime/producer/217/Nozomi_Entertainment"
-        }
-      ],
-      "studios": [
-        {
-          "mal_id": 14,
-          "type": "anime",
-          "name": "Sunrise",
-          "url": "https://myanimelist.net/anime/producer/14/Sunrise"
-        }
-      ],
-      "genres": [
-        {
-          "mal_id": 4,
-          "type": "anime",
-          "name": "Comedy",
-          "url": "https://myanimelist.net/anime/genre/4/Comedy"
-        },
-        {
-          "mal_id": 47,
-          "type": "anime",
-          "name": "Gourmet",
-          "url": "https://myanimelist.net/anime/genre/47/Gourmet"
-        }
-      ],
-      "explicit_genres": [],
-      "themes": [],
-      "demographics": [
-        {
-          "mal_id": 27,
-          "type": "anime",
-          "name": "Shounen",
-          "url": "https://myanimelist.net/anime/genre/27/Shounen"
-        }
-      ],
-      "id": 3
-    },
-    {
-      "mal_id": 27,
-      "url": "https://myanimelist.net/anime/27/Trinity_Blood",
-      "images": {
-        "jpg": {
-          "image_url": "https://cdn.myanimelist.net/images/anime/10/24649.jpg",
-          "small_image_url": "https://cdn.myanimelist.net/images/anime/10/24649t.jpg",
-          "large_image_url": "https://cdn.myanimelist.net/images/anime/10/24649l.jpg"
-        },
-        "webp": {
-          "image_url": "https://cdn.myanimelist.net/images/anime/10/24649.webp",
-          "small_image_url": "https://cdn.myanimelist.net/images/anime/10/24649t.webp",
-          "large_image_url": "https://cdn.myanimelist.net/images/anime/10/24649l.webp"
-        }
-      },
-      "trailer": {
-        "youtube_id": "35GXUVBRIEM",
-        "url": "https://www.youtube.com/watch?v=35GXUVBRIEM",
-        "embed_url": "https://www.youtube.com/embed/35GXUVBRIEM?enablejsapi=1&wmode=opaque&autoplay=1",
-        "images": {
-          "image_url": "https://img.youtube.com/vi/35GXUVBRIEM/default.jpg",
-          "small_image_url": "https://img.youtube.com/vi/35GXUVBRIEM/sddefault.jpg",
-          "medium_image_url": "https://img.youtube.com/vi/35GXUVBRIEM/mqdefault.jpg",
-          "large_image_url": "https://img.youtube.com/vi/35GXUVBRIEM/hqdefault.jpg",
-          "maximum_image_url": "https://img.youtube.com/vi/35GXUVBRIEM/maxresdefault.jpg"
-        }
-      },
-      "approved": true,
-      "titles": [
-        {
-          "type": "Default",
-          "title": "Trinity Blood"
-        },
-        {
-          "type": "Japanese",
-          "title": "トリニティ・ブラッド"
-        },
-        {
-          "type": "English",
-          "title": "Trinity Blood"
-        }
-      ],
-      "title": "Trinity Blood",
-      "title_english": "Trinity Blood",
-      "title_japanese": "トリニティ・ブラッド",
-      "title_synonyms": [],
-      "type": "TV",
-      "source": "Light novel",
-      "episodes": 24,
-      "status": "Finished Airing",
-      "airing": false,
-      "aired": {
-        "from": "2005-04-29T00:00:00+00:00",
-        "to": "2005-10-28T00:00:00+00:00",
-        "prop": {
-          "from": {
-            "day": 29,
-            "month": 4,
-            "year": 2005
-          },
-          "to": {
-            "day": 28,
-            "month": 10,
-            "year": 2005
-          }
-        },
-        "string": "Apr 29, 2005 to Oct 28, 2005"
-      },
-      "duration": "24 min per ep",
-      "rating": "R - 17+ (violence & profanity)",
-      "score": 7.3,
-      "scored_by": 77676,
-      "rank": 2476,
-      "popularity": 1159,
-      "members": 173932,
-      "favorites": 1266,
-      "synopsis": "Following Armageddon, an apocalyptic war, mankind faces yet another menace: vampires. The continuous confrontations between the races have split the world into separate factions. The race of vampires, Methuselah, are affiliated with the New Human Empire; whereas the humans, deemed Terrans by the vampires, make up the Vatican Papal State. Furthermore, extremist groups like the Rosenkreuz Order strive to rekindle a war, despite the factions' attempts to avoid direct conflict. To combat terrorist organizations, the Vatican has implemented the AX unit. Led by Cardinal Caterina Sforza, the AX agents investigate vampire-related disturbances with hopes that the Terrans and the Methuselah will one day achieve peaceful coexistence. Amongst the AX unit is priest Abel Nightroad—a seemingly disoriented but gentle-hearted fellow who is a fierce vampire slayer on the battlefield. Joining the unit as his partner is agent Sister Esther Blanchett, a brave and gentle young nun troubled with a tragic past. As the two grow closer, they begin to uncover signs of malicious schemes and dark forces working in the shadows. But the path they walk is riddled with misfortune that might just force them to confront the memories that plague their hearts. [Written by MAL Rewrite]",
-      "background": "Trinity Blood premiered in Japan on the satellite network WOWOW on April 28, 2005 and ran until October 6, 2005. The satellite channel Animax also aired the series across its networks. The Funimation English dubbing of the series premiered on Canadian television on the Razer network on July 6, 2006; and in the United States as part of Cartoon Network's Adult Swim block on September 9, 2006. The series enjoyed strong television ratings when it originally aired in Japan. Its North American debut was also considered successful; it is credited for being one of four Funimation properties that helped the company achieve a 47.8% sales gain in 2006. Funimation gave Trinity Blood a 90-minute US theatrical release to promote the series. The film, titled Trinity Blood: Genesis, is a compilation of the first four episodes of the series and released on May 5, 2006 in conjunction with Anime Central in Chicago, IL.",
-      "season": "spring",
-      "year": 2005,
-      "broadcast": {
-        "day": "Fridays",
-        "time": "00:00",
-        "timezone": "Asia/Tokyo",
-        "string": "Fridays at 00:00 (JST)"
-      },
-      "producers": [],
-      "licensors": [
-        {
-          "mal_id": 102,
-          "type": "anime",
-          "name": "Funimation",
-          "url": "https://myanimelist.net/anime/producer/102/Funimation"
-        }
-      ],
-      "studios": [
-        {
-          "mal_id": 3,
-          "type": "anime",
-          "name": "Gonzo",
-          "url": "https://myanimelist.net/anime/producer/3/Gonzo"
-        }
-      ],
-      "genres": [
-        {
-          "mal_id": 1,
-          "type": "anime",
-          "name": "Action",
-          "url": "https://myanimelist.net/anime/genre/1/Action"
-        },
-        {
-          "mal_id": 37,
-          "type": "anime",
-          "name": "Supernatural",
-          "url": "https://myanimelist.net/anime/genre/37/Supernatural"
-        }
-      ],
-      "explicit_genres": [],
-      "themes": [
-        {
-          "mal_id": 32,
-          "type": "anime",
-          "name": "Vampire",
-          "url": "https://myanimelist.net/anime/genre/32/Vampire"
-        }
-      ],
-      "demographics": [],
-      "id": 6
-    },
-    {
-      "mal_id": 31,
-      "url": "https://myanimelist.net/anime/31/Neon_Genesis_Evangelion__Death___Rebirth",
-      "images": {
-        "jpg": {
-          "image_url": "https://cdn.myanimelist.net/images/anime/1993/113122.jpg",
-          "small_image_url": "https://cdn.myanimelist.net/images/anime/1993/113122t.jpg",
-          "large_image_url": "https://cdn.myanimelist.net/images/anime/1993/113122l.jpg"
-        },
-        "webp": {
-          "image_url": "https://cdn.myanimelist.net/images/anime/1993/113122.webp",
-          "small_image_url": "https://cdn.myanimelist.net/images/anime/1993/113122t.webp",
-          "large_image_url": "https://cdn.myanimelist.net/images/anime/1993/113122l.webp"
-        }
-      },
-      "trailer": {
-        "youtube_id": "eI8aUqsCovo",
-        "url": "https://www.youtube.com/watch?v=eI8aUqsCovo",
-        "embed_url": "https://www.youtube.com/embed/eI8aUqsCovo?enablejsapi=1&wmode=opaque&autoplay=1",
-        "images": {
-          "image_url": "https://img.youtube.com/vi/eI8aUqsCovo/default.jpg",
-          "small_image_url": "https://img.youtube.com/vi/eI8aUqsCovo/sddefault.jpg",
-          "medium_image_url": "https://img.youtube.com/vi/eI8aUqsCovo/mqdefault.jpg",
-          "large_image_url": "https://img.youtube.com/vi/eI8aUqsCovo/hqdefault.jpg",
-          "maximum_image_url": "https://img.youtube.com/vi/eI8aUqsCovo/maxresdefault.jpg"
-        }
-      },
-      "approved": true,
-      "titles": [
-        {
-          "type": "Default",
-          "title": "Neon Genesis Evangelion: Death & Rebirth"
-        },
-        {
-          "type": "Synonym",
-          "title": "Shinseiki Evangelion Gekijouban: Shi to Shinsei"
-        },
-        {
-          "type": "Synonym",
-          "title": "Neon Genesis Evangelion - Death and Rebirth"
-        },
-        {
-          "type": "Japanese",
-          "title": "新世紀エヴァンゲリオン劇場版 シト新生"
-        },
-        {
-          "type": "English",
-          "title": "Neon Genesis Evangelion: Death & Rebirth"
-        }
-      ],
-      "title": "Neon Genesis Evangelion: Death & Rebirth",
-      "title_english": "Neon Genesis Evangelion: Death & Rebirth",
-      "title_japanese": "新世紀エヴァンゲリオン劇場版 シト新生",
-      "title_synonyms": [
-        "Shinseiki Evangelion Gekijouban: Shi to Shinsei",
-        "Neon Genesis Evangelion - Death and Rebirth"
-      ],
-      "type": "Movie",
-      "source": "Original",
-      "episodes": 1,
-      "status": "Finished Airing",
-      "airing": false,
-      "aired": {
-        "from": "1997-03-15T00:00:00+00:00",
-        "to": null,
-        "prop": {
-          "from": {
-            "day": 15,
-            "month": 3,
-            "year": 1997
-          },
-          "to": {
-            "day": null,
-            "month": null,
-            "year": null
-          }
-        },
-        "string": "Mar 15, 1997"
-      },
-      "duration": "1 hr 44 min",
-      "rating": "R - 17+ (violence & profanity)",
-      "score": 7.46,
-      "scored_by": 132699,
-      "rank": 1808,
-      "popularity": 859,
-      "members": 237108,
-      "favorites": 628,
-      "synopsis": "In the year 2015, more than a decade has passed since the catastrophic event known as Second Impact befell mankind. During this time of recovery, a select few learned of beings known as the Angels—colossal malevolent entities with the intention of triggering the Third Impact and wiping out the rest of humanity. Called into the city of Tokyo-3 by his father Gendou Ikari, teenager Shinji is thrust headlong into humanity's struggle. Separated from Gendou since the death of his mother, Shinji presumes that his father wishes to repair their shattered familial bonds; instead, he discovers that he was brought to pilot a giant machine capable of fighting the Angels, Evangelion Unit-01. Forced to battle against wave after wave of mankind's greatest threat, the young boy finds himself caught in the middle of a plan that could affect the future of humanity forever. [Written by MAL Rewrite]",
-      "background": "Death and Rebirth is a highly condensed re-edit of the series (Death) plus the first half of The End of Evangelion (Rebirth).",
-      "season": null,
-      "year": null,
-      "broadcast": {
-        "day": null,
-        "time": null,
-        "timezone": null,
-        "string": null
-      },
-      "producers": [
-        {
-          "mal_id": 166,
-          "type": "anime",
-          "name": "Movic",
-          "url": "https://myanimelist.net/anime/producer/166/Movic"
-        },
-        {
-          "mal_id": 167,
-          "type": "anime",
-          "name": "Sega",
-          "url": "https://myanimelist.net/anime/producer/167/Sega"
-        },
-        {
-          "mal_id": 717,
-          "type": "anime",
-          "name": "TV Tokyo Music",
-          "url": "https://myanimelist.net/anime/producer/717/TV_Tokyo_Music"
-        },
-        {
-          "mal_id": 1461,
-          "type": "anime",
-          "name": "Audio Tanaka",
-          "url": "https://myanimelist.net/anime/producer/1461/Audio_Tanaka"
-        }
-      ],
-      "licensors": [
-        {
-          "mal_id": 783,
-          "type": "anime",
-          "name": "GKIDS",
-          "url": "https://myanimelist.net/anime/producer/783/GKIDS"
-        },
-        {
-          "mal_id": 947,
-          "type": "anime",
-          "name": "Manga Entertainment",
-          "url": "https://myanimelist.net/anime/producer/947/Manga_Entertainment"
-        }
-      ],
-      "studios": [
-        {
-          "mal_id": 6,
-          "type": "anime",
-          "name": "Gainax",
-          "url": "https://myanimelist.net/anime/producer/6/Gainax"
-        },
-        {
-          "mal_id": 10,
-          "type": "anime",
-          "name": "Production I.G",
-          "url": "https://myanimelist.net/anime/producer/10/Production_IG"
+          "name": "Madhouse",
+          "url": "https://myanimelist.net/anime/producer/11/Madhouse"
         }
       ],
       "genres": [
@@ -617,19 +297,25 @@
           "url": "https://myanimelist.net/anime/genre/8/Drama"
         },
         {
-          "mal_id": 24,
+          "mal_id": 7,
           "type": "anime",
-          "name": "Sci-Fi",
-          "url": "https://myanimelist.net/anime/genre/24/Sci-Fi"
+          "name": "Mystery",
+          "url": "https://myanimelist.net/anime/genre/7/Mystery"
+        },
+        {
+          "mal_id": 41,
+          "type": "anime",
+          "name": "Suspense",
+          "url": "https://myanimelist.net/anime/genre/41/Suspense"
         }
       ],
       "explicit_genres": [],
       "themes": [
         {
-          "mal_id": 18,
+          "mal_id": 50,
           "type": "anime",
-          "name": "Mecha",
-          "url": "https://myanimelist.net/anime/genre/18/Mecha"
+          "name": "Adult Cast",
+          "url": "https://myanimelist.net/anime/genre/50/Adult_Cast"
         },
         {
           "mal_id": 40,
@@ -638,8 +324,15 @@
           "url": "https://myanimelist.net/anime/genre/40/Psychological"
         }
       ],
-      "demographics": [],
-      "id": 7
+      "demographics": [
+        {
+          "mal_id": 42,
+          "type": "anime",
+          "name": "Seinen",
+          "url": "https://myanimelist.net/anime/genre/42/Seinen"
+        }
+      ],
+      "id": 2
     }
   ]
 }

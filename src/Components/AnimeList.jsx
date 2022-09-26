@@ -19,7 +19,7 @@ function AnimeList() {
   const fetchData = async () => {
     try {
       setState({ loading: true });
-      let url = "https://api.jikan.moe/v4/anime?limit=24";
+      let url = "https://api.jikan.moe/v4/anime?limit=10";
       let response = await axios.get(url);
       let jsonResponse = response.data;
       setState({
@@ -55,7 +55,7 @@ function AnimeList() {
 
   const fetchMore = async () => {
     try {
-      let url = `https://api.jikan.moe/v4/anime?limit=24&page=${page + 1}`;
+      let url = `https://api.jikan.moe/v4/anime?limit=10&page=${page + 1}`;
       let response = await axios.get(url);
       let jsonResponse = response.data;
 
